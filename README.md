@@ -44,19 +44,7 @@ npm install -g @angular/cli
 - **To build the project** for production:
 
 ```bash
-ng build --prod
-```
-
-- **To run the tests**:
-
-```bash
-ng test
-```
-
-- **To run the end-to-end tests**:
-
-```bash
-ng e2e
+ng build
 ```
 
 ## API Integration
