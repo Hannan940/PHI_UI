@@ -1,0 +1,17 @@
+<div class="file-processor-container">
+    <h2>PHI Redaction File Processor</h2>
+  
+    <div>
+      <label for="fileInput">Select Input Files:</label>
+      <input type="file" id="fileInput" (change)="onFileSelect($event)" multiple />
+    </div>
+  
+    <div>
+      <button (click)="processFiles()" [disabled]="!selectedFiles.length">Process Files</button>
+    </div>
+  
+    <div *ngIf="statusMessage" class="status-message" [ngClass]="{ 'danger': isError() }">
+      <p>{{ statusMessage }}</p>
+    </div>
+  </div>
+  
